@@ -166,4 +166,4 @@ bar {
 }
 exec --no-startup-id clipit
 exec_always --no-startup-id "setxkbmap -model pc105 -layout us,gr -option grp:ctrl_alt_toggle"
-exec "xrandr --output VGA-0 --off"
+#exec "xrandr --output VGA-0 --off"
