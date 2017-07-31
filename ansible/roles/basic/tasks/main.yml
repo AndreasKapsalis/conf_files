@@ -1,0 +1,14 @@
+- name: "Install updates"
+  apt: 
+        update_cache: yes
+        upgrade: dist
+
+- name: "Ensure apache2 is installed"
+  apt:
+          name: apache2
+          state: present
+
+- name: "Ensure apache2 is running"
+  service:
+          name: apache2
+          state: stopped

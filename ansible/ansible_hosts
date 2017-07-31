@@ -1,0 +1,8 @@
+[squad]
+10.25.122.84
+10.25.122.214
+10.25.122.163
+
+[squad:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=auser
