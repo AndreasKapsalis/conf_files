@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/akapsalis/.oh-my-zsh
+export ZSH=/home/andreas/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -54,8 +54,7 @@ ZSH_THEME="jnrowe"
 plugins=(git history history-substring-search thefuck)
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$PATH:/home/akapsalis/.local/bin:/snap/bin
-export ANSIBLE_CONFIG=/home/akapsalis/.config/ansible/ansible.cfg
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -69,9 +68,6 @@ export ANSIBLE_CONFIG=/home/akapsalis/.config/ansible/ansible.cfg
 # else
 #   export EDITOR='mvim'
 # fi
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-  exec startx
-fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
