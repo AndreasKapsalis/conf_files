@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/andreas/.oh-my-zsh
+  export ZSH=/home/akapsalis/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -56,7 +56,10 @@ plugins=(git history history-substring-search thefuck)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+# Configuration for xserver autostart
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+	  exec startx
+  fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
