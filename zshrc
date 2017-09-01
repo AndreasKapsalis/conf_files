@@ -60,6 +60,11 @@ source $ZSH/oh-my-zsh.sh
 if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 	  exec startx
   fi
+
+# Export proxy settings for work pc
+export http_proxy = "http://172.25.1.1:8080/"
+export https_proxy = "http://172.25.1.1:8080/"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

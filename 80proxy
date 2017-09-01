@@ -1,0 +1,4 @@
+# This file goes into the /etc/apt/apt.conf.d/ directory
+# Proxy settings for apt 
+Acquire::http::Proxy "http://172.25.1.1:8080/";
+Acquire::https::Proxy "http://172.25.1.1:8080/";
