@@ -61,9 +61,9 @@ if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 	  exec startx
   fi
 
-# Export proxy settings for work pc
-export http_proxy = "http://172.25.1.1:8080/"
-export https_proxy = "http://172.25.1.1:8080/"
+# Export proxy settings for work pc -- NOT NEEDED ANYMORE
+#export http_proxy = "http://172.25.1.1:8080/"
+#export https_proxy = "http://172.25.1.1:8080/"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
