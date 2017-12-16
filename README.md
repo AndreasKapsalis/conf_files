@@ -26,7 +26,7 @@ Copy the following into `/etc/fonts/conf.avail/69-fixed-bitmaps.conf`:
 ```
 Then:
 ```
-# ln -s ../conf.avail/69-fixed-bitmaps.conf /etc/fonts/conf.d/
+# ln -s /etc/fonts/conf.avail/69-fixed-bitmaps.conf /etc/fonts/conf.d/
 # dpkg-reconfigure fontconfig-config
 # dpkg-reconfigure fontconfig
 ```
