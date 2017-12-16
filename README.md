@@ -33,5 +33,5 @@ Then:
 ### Siji fonts
 ```
 git clone https://github.com/stark/siji && cd siji
-sudo ./install.sh -d /etc/fonts/conf.d/
+sudo ./install.sh -d /usr/share/fonts/
 ```
