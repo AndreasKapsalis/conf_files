@@ -181,3 +181,4 @@ exec_always --no-startup-id "setxkbmap -model pc105 -layout us,gr -option grp:ct
 #exec "xrandr --output VGA-0 --off"
 exec "xset s off"
 exec "xset -dpms"
+exec_always --no-startup-id  "feh --bg-scale /home/andreas/.config/i3/derelict.jpg"
