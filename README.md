@@ -36,7 +36,7 @@ git clone https://github.com/stark/siji && cd siji
 sudo ./install.sh -d /usr/share/fonts/
 ```
 ## xbacklight intel driver integration
-Paste the following into `/etc/X11/xorg.cong`:
+Paste the following into `/etc/X11/xorg.conf`:
 ```
 Section "Device"
     Identifier  "Card0"
