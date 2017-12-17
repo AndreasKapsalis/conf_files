@@ -28,6 +28,6 @@ BLURTYPE="0x2" # 4.39s
 
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
-convert  $IMAGE  -blur $BLURTYPE -fill "#1a730f" -pointsize 33 -gravity center -annotate +0+160 "Do not touch what is not yours!" $IMAGE 
+convert  $IMAGE  -blur $BLURTYPE -fill "grey" -pointsize 33 -gravity center -annotate +0+160 "Do not touch what is not yours!" $IMAGE 
 i3lock -i $IMAGE -p win -n -f -b
 rm $IMAGE
