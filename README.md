@@ -3,7 +3,7 @@ A set of configuration files
 
 ## Dependecies for i3, i3lock and polybar
 ```
-sudo apt install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libxcb-cursor-dev network-manager-gnome i3 i3status i3blocks i3lock ttf-unifont scrot sxiv ranger feh clipit git
+sudo apt install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libxcb-cursor-dev network-manager-gnome i3 i3status i3blocks i3lock ttf-unifont scrot sxiv ranger feh clipit git libpango1.0-dev ttf-mscorefonts-installer xbacklight
 ```
 ## Font dependencies not in Debian repos
 ### Fixed fonts
@@ -34,4 +34,13 @@ Then:
 ```
 git clone https://github.com/stark/siji && cd siji
 sudo ./install.sh -d /usr/share/fonts/
+```
+## xbacklight intel driver integration
+Paste the following into `/etc/X11/xorg.cong`:
+```
+Section "Device"
+    Identifier  "Card0"
+    Driver      "intel"
+    Option      "Backlight"  "intel_backlight"
+EndSection
 ```
