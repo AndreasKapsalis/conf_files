@@ -51,7 +51,7 @@ ZSH_THEME="jnrowe"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history history-substring-search thefuck)
+plugins=(git history history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,7 +74,7 @@ if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
+export ANSIBLE_VAULT_PASSWORD_FILE=/home/andreas/.ansible/vault_pass.txt
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
